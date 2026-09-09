@@ -1,7 +1,8 @@
 print('\033[1;36m-' * 30)
 print(f'{'Loja ALIMCAPIM':^30}')
 print('\033[1;36m-\033[m' * 30)
-totalcompra = tot1000 = contbarato = menorpreco = barato = 0
+totalcompra = tot1000 = contbarato = menorpreco = 0
+barato = ''
 while True:
     produto = str(input('\033[1;36mPRODUTO:\033[m '))
     preco = float(input('\033[1;36mPREÇO: R$\033[m '))
@@ -15,7 +16,7 @@ while True:
     sair = ' '
     while sair not in 'SN':
         sair = str(input('\033[1;31mQuer continuar? [S/N]\033[m ')).strip().upper()[0]
-    if sair in 'N':
+    if sair == 'N':
         break
 print('\033[1;36m-' * 30)
 print(f'{'COMPRA FINALIZADA':^30}')
