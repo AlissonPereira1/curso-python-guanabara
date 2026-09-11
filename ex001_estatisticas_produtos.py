@@ -1,6 +1,7 @@
 print('\033[1;36m-' * 30)
 print(f'{'Loja ALIMCAPIM':^30}')
 print('\033[1;36m-\033[m' * 30)
+print()
 totalcompra = tot1000 = contbarato = menorpreco = 0
 barato = ''
 while True:
