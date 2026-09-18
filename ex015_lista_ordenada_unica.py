@@ -15,7 +15,7 @@ while True:
         # 3. Lógica de inserção ordenada em tempo real (sem usar .sort() ao final)
         # enumerate(num) percorre a lista capturando índice (pos) e valor (n)
         for pos, n in enumerate(num):
-            if valor <= n:
+            if valor < n:
                 num.insert(pos, valor)
                 print(f'Número adicionado na posição {pos} da lista...!')
                 break
