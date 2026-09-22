@@ -30,5 +30,3 @@ while True:
     else:
         print('Opção invalida! Tente novamente.')
         sleep(1)
-
-
