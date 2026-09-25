@@ -29,7 +29,7 @@ while True:
         print('<<< FINALIZANDO >>> Volte sempre!')
         break
 
-    if aluno < len(boletim):
+    if aluno <= len(boletim) - 1:
         # Desempacotamos direto da lista do aluno escolhido
         nome, notas = boletim[aluno]
         print(f'Notas de {nome} são {notas}')
